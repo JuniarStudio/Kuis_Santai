@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".GamePlayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibClose"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/tvCoins"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ibLamp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_lamp_on" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shape_coin"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_color_coins" />
+
+            <TextView
+                android:id="@+id/tvCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="30000"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:text="TextView" />
+
+        <include
+            layout="@layout/shape_dialog_picture"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lyJawaban"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="A"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="A"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="A"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="A"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="A"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="A"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btnReset"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="4"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="reset"
+                android:textColor="@android:color/black"
+                android:tint="@android:color/black"
+                app:srcCompat="@drawable/ic_replay" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="B"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="B"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="B"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b10"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="B"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b11"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="B"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b12"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="B"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btnCheck"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="4"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="check"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:textColor="@android:color/black"
+                android:tint="@android:color/black"
+                app:srcCompat="@drawable/ic_more_than" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
